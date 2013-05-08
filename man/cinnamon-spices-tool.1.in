@@ -1,0 +1,23 @@
+.TH CINNAMON-SPICES-TOOL 1 "@DATE@" "@VERSION@" "cinnamon manual"
+.SH NAME
+cinnamon-spices-tool \- spices management program
+.SH SYNOPSIS
+.B cinnamon-spices-tool 
+[\fIOPTION\fR]
+.BR
+.SH DESCRIPTION
+.PP
+\fBcinnamon-spices-tool\fP runs a wizard that helps generating a template for
+one of the various Cinnamon extensions, also known as spices.
+.TP
+\fB\-a\fR, \fB\-\-create-applet\fR
+Create a new Cinnamon applet
+.TP
+\fB\-d\fR, \fB\-\-create-desklet\fR
+Create a new Cinnamon desklet
+.TP
+\fB\-e\fR, \fB\-\-create-extension\fR
+Create a new Cinnamon extension
+.SH "SEE ALSO"
+.BR cinnamon-settings (1)
+

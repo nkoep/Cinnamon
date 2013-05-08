@@ -221,6 +221,9 @@ AC_SUBST(CINNAMON_SYSTEM_CA_FILE,["$with_ca_certificates"])
 BROWSER_PLUGIN_DIR="${BROWSER_PLUGIN_DIR:-"\${libdir}/mozilla/plugins"}"
 AC_ARG_VAR([BROWSER_PLUGIN_DIR],[Where to install the plugin to])
 
+DATE=`date +"%Y-%m-%d"`
+AC_SUBST(DATE)
+
 AC_CONFIG_FILES([
   Makefile
   data/Makefile
@@ -230,7 +233,9 @@ AC_CONFIG_FILES([
   browser-plugin/Makefile
   tests/Makefile
   po/Makefile.in
+  man/cinnamon-spices-tool.1
   man/Makefile
   files/Makefile
 ])
 AC_OUTPUT
+

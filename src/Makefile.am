@@ -29,8 +29,8 @@ CLEANFILES += $(service_DATA)
 
 CLEANFILES += $(gir_DATA) $(typelib_DATA)
 
-bin_SCRIPTS += cinnamon-extension-tool
-EXTRA_DIST += cinnamon-extension-tool.in
+bin_SCRIPTS += cinnamon-spices-tool
+EXTRA_DIST += cinnamon-spices-tool.in
 bin_PROGRAMS = cinnamon-real
 
 if USE_JHBUILD_WRAPPER_SCRIPT
@@ -66,7 +66,7 @@ cinnamon-jhbuild: cinnamon-jhbuild.in cinnamon-real Makefile
 	@# Regenerate libtool wrapper so Alt+F2 restart will work
 	@$(LIBTOOL) --mode=execute test -f cinnamon-real
 
-cinnamon-extension-tool: cinnamon-extension-tool.in Makefile
+cinnamon-spices-tool: cinnamon-spices-tool.in Makefile
 	$(AM_V_GEN) sed $(generated_script_substitutions) $< > $@.tmp && mv $@.tmp $@ && chmod a+x $@
 
 CLEANFILES += cinnamon $(bin_SCRIPTS)
